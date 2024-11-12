@@ -1,0 +1,499 @@
+/* got a little messy towards the end and some selectors are in
+misplaced areas, so documentation is a little off. */
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+/* Background gradient */
+#wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(#3c2e20, #7b6a52);
+}
+
+html, body {
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+
+/*banner and site title style rules*/
+.mobile {
+    background-image: url('/RogueEscapes/images/cobblestone-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mobile h1 {
+    text-align: center;
+    display: block;
+    font-family: "Cinzel", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #f3d62b; 
+    background-image: linear-gradient(90deg, #f3d62b 0%, #b60003 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-size: 3em;
+    filter: drop-shadow(1px 1px 1px #000000)
+}
+
+/* nav style rules */
+nav {
+    text-align: center;
+    background-color: #292a2c;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav li {
+    display: block;
+    border-top: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    color: #ffffff;
+}
+
+/*page title style rules*/
+header {
+    text-align: center;
+    display: block;
+    font-family: "Cinzel", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #f3d62b; 
+    background-image: linear-gradient(90deg, #f3d62b 0%, #b60003 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-size: 2em;
+    filter: drop-shadow(1px 1px 1px #000000)
+}
+
+/*main content style rules*/
+main {
+    flex-grow: 1;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #C0A68B;
+}
+
+main h3, h4 {
+    font-weight: bold;
+    color: #d8a359;
+}
+
+main p {
+    padding: 1vh;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+/*style rules for review page preface*/
+.rec {
+    text-align: left;
+    justify-content: left;
+}
+
+.rec h3 {
+    text-align: center;
+}
+
+.italicize {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*style rules for table and table elements*/
+table {
+    display: table-row;
+    width: 100%;
+    table-layout: fixed;
+    overflow: hidden;
+    border-radius: 20px;
+    border-style: solid;
+    border-collapse: collapse;
+    margin-top: 2vh;
+}
+
+td {
+    background-color: #F5DEB3;
+}
+
+.mobile-heading {
+    text-align: center;
+    color: rgb(175, 157, 53);
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    background-color: #7B2D26;
+    -webkit-text-stroke: 1px #7B2D26;
+    border-top: 3px solid #7B2D26;
+    margin-bottom: 4vh;
+}
+
+#header {
+    display: none;
+    justify-items: center;
+    font-weight: bold;
+    background-color: #7B2D26;
+    font-family: "Crimson Text", serif;
+    font-size: xx-large;
+    color: rgb(175, 157, 53);
+}
+
+#qudheader {
+    display: table;
+    text-align: center;
+    font-weight: bold;
+    background-color: #7B2D26;
+    font-family: "Crimson Text", serif;
+    font-size: xx-large;
+    color: rgb(175, 157, 53);
+}
+
+/* style rules for home page */
+.home h3 {
+    font-family: "Cinzel", serif;
+}
+
+.home {
+    border: 2vh solid #7B2D26;
+    border-radius: 25px;
+    background-color: #292a2c;
+}
+
+tr {
+    display:block;
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+td img {
+    width: 90%;
+}
+
+
+
+.imgCapt {
+    font-family: "Roboto Slab", serif;
+    font-weight: bolder;
+    font-size: x-large;
+    color:#4a3f35
+}
+
+.imgCol {
+    background-color: #978d78;
+    align-content: center;
+}
+/*style rules for embedded video*/
+#balatroGameplay {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.gotw {
+    color: #f7dbbd;
+}
+
+/* out of place table element rule */
+td {
+    display: block;
+    text-align: center;
+    border: none;
+    word-wrap: break-word;
+    border: 15px solid #292a2c; /* #6E675F */
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top: 15px solid #7B2D26;
+}
+
+.review {
+    color:#333333;
+    align-content: center;
+    padding: 3vh;
+}
+
+.qudreview {
+    color:#333333;
+    text-align: left;
+    align-content: center;
+    padding: 15px;
+}
+
+.grade {
+    color:#4a3f35;
+    text-align: left;
+    align-content: center;
+    background-color: #ffd895;
+    padding: 3vh;
+    /* #F5DEB3  #f3d293 */
+}
+
+.bold-text {
+    font-weight: bolder;
+}
+
+footer {
+    display: block;
+    background-image: url('/RogueEscapes/images/cobblestone-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+/*style rules for form*/
+form {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    text-align: left;
+    border: 10px solid #7B2D26;
+    border-radius: 10px;
+    background-color: #292a2c;
+    padding: 5px;
+    margin: 2%;
+}
+
+#fname, #lname, #email, #bday, #phone-number {
+    width: 80%; /* Ensures all inputs are the same width */
+    font-size: 1rem;
+    margin: 2%;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #D3CEC4; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1rem;  
+    cursor: pointer;    
+}
+
+input[type="checkbox"] {
+    margin-bottom: 8%;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #4a3f35
+}
+
+/*Media queries*/
+
+/*style rules for tablet viewports*/
+@media screen and (min-width: 768px) {
+
+    .home {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20vh;
+        align-content: center;
+        font-weight: bolder;
+        line-height: 7vh;
+    }
+    
+    table {
+        display: table;
+    }
+
+    tr {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto-fill, 1fr);
+        margin-bottom: 5vh;
+    }
+
+    td img {
+        width: 100%;
+        height: auto;
+    }
+
+    .table-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #header {
+        display: grid;
+        margin: 0px auto 0px auto;
+        background-color: #7B2D26;
+    }
+
+    .mobile-heading {
+        display: none;
+    }
+
+    .qudreview {
+        grid-column: span 2;
+    }
+    .rec p {
+       width: 80%; 
+       text-align: left;
+       margin: 0 auto;
+       font-weight: 500;
+    }
+    .rec h4 {
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .mobile {
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .mobile h1 {
+        font-size: 5em;
+        filter: drop-shadow(3px 3px 3px #000000)
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    nav li {
+        border-bottom: 1px solid black;
+    }
+
+    nav {
+        margin-right: 5vh;
+        margin-left: 5vh;
+        background: none;
+    }
+
+    nav li a {
+        font-family: "Cinzel", serif;
+        font-weight: 500;
+        font-style: normal ;
+        color: white; 
+        font-size: x-large;
+        text-shadow: 2px 2px 4px #000000
+    }
+
+    nav li a:hover {
+        color: rgb(175, 157, 53);
+    }
+
+    .gotw {
+        margin-bottom: 20vh;
+    }
+
+    .gotw p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.2em;
+    }
+
+    form {
+        flex-direction: row;
+    }
+}
+
+/*query for desktop*/
+@media screen and (min-width: 1000px) {
+
+    header {
+        font-size: 3em;
+    }
+    
+    nav {
+        margin-right: 10vh;
+        margin-left: 2vh;
+        background: none;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .table-container {
+        max-width: 90%;
+    }
+
+    tr {
+        margin-bottom: 1vh;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .review {
+        font-size: larger;
+    }
+
+    .grade {
+        font-size: larger;
+    }
+
+    .qudreview {
+        font-size: larger;
+    }
+
+    #balatroGameplay {
+        width: 60%;
+    }
+
+    .home {
+        width: 60%;
+    }
+    
+    .home p {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* query for large desktop */
+@media screen and (min-width: 1921px), print {
+    
+    
+    body {
+        background-image: url('/RogueEscapes/images/cobblestone-banner.jpg');
+    }
+    
+    #wrapper {
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
