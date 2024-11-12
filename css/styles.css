@@ -29,7 +29,7 @@ html, body {
 
 /*banner and site title style rules*/
 .mobile {
-    background-image: url('/RoguEscapes/images/cobblestone-banner.jpg');
+    background-image: url('/RogueEscapes/images/cobblestone-banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -270,7 +270,7 @@ td {
 
 footer {
     display: block;
-    background-image: url('/RoguEscapes/images/cobblestone-banner.jpg');
+    background-image: url('/RogueEscapes/images/cobblestone-banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -489,7 +489,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     
     
     body {
-        background-image: url('/RoguEscapes/images/cobblestone-banner.jpg');
+        background-image: url('/RogueEscapes/images/cobblestone-banner.jpg');
     }
     
     #wrapper {
